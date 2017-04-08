@@ -1,0 +1,4 @@
+" self use {
+    map <leader>wq :wq <CR>
+    map <leader>qi :q! <CR>
+" }

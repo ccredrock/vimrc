@@ -1,0 +1,8 @@
+#!/bin/sh
+# uninstall delete command from ~/.vimrc
+
+SPATH=$(cd "$(dirname "$0")" && pwd)
+echo "let g:cc_vimrc_path=\"${SPATH}\"" >> ~/.vimrc
+echo "execute printf(\"source %s/vimrc\", g:cc_vimrc_path)" >> ~/.vimrc
+vim +BundleInstall! +BundleClean
+
